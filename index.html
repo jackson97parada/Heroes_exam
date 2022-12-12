@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <!-- npx tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch -->
+    <title>Document</title>
+  </head>
+  <body class="font-DM">
+    <!-- 1° Hero -->
+    <nav
+      class="flex flex-wrap justify-between px-10 py-6 lg:px-28 lg:py-16 border-b-2 border-gray-400 border-opacity-25 lg:border-none"
+    >
+      <!-- ======================= -->
+      <a
+        href="#"
+        class="text-2xl font-bold text-blueBlack hover:text-[#25DAC5] lg:mr-24 transition-slow"
+        >Startup 3</a
+      >
+      <!-- ======================= -->
+      <button
+        data-collapse-toggle="navbar-default-1"
+        type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <!-- ======================= -->
+      <ul
+        class="hidden md:flex items-center w-full md:w-auto md:gap-4 lg:gap-10"
+        id="navbar-default-1"
+      >
+        <li>
+          <a
+            href="#"
+            class="text-lg font-medium text-gray-400 hover:border-b border-gray-600 lg:hover:pb-1.5 transition-slow"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-lg font-medium text-gray-400 hover:border-b border-gray-600 lg:hover:pb-1.5 transition-slow"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-lg font-medium text-gray-400 hover:border-b border-gray-600 lg:hover:pb-1.5 transition-slow"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-lg font-medium text-gray-400 hover:border-b border-gray-600 lg:hover:pb-1.5 transition-slow"
+            >Shop</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="font-medium text-gray-400 hover:border-b border-gray-600 lg:hover:pb-1.5 transition-slow"
+            ><i class="fa-solid fa-search"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- ======================= -->
+      <ul class="w-full md:w-auto">
+        <button
+          class="text-lg font-medium text-gray-400 px-3 py-1.5 w-full md:w-auto rounded-full hover:text-[#25DAC5]"
+        >
+          Sign Up
+        </button>
+        <button
+          class="text-lg font-medium text-white bg-[#25DAC5] px-6 py-1.5 w-full md:w-auto rounded-full hover:bg-blueBlack hover:bg-opacity-95 transition-slow"
+        >
+          Sign In
+        </button>
+      </ul>
+    </nav>
+    <!-- ===== -->
+    <div class="px-8 text-center mb-6">
+      <!-- ==================== -->
+      <h1 class="text-5xl lg:text-7xl text-blueBlack font-bold py-8">
+        Startup Framework
+      </h1>
+      <!-- ==================== -->
+      <p
+        class="text-xl lg:text-[22px] text-gray-400 font-medium lg:w-[44%] leading-8 lg:py-2 lg:mb-20 lg:mx-auto pb-10"
+      >
+        We made it so beutiful and simple. It combines landings, pages, blogs
+        and shop screens. It is definitely the tool you need in your collection!
+      </p>
+      <!-- ==================== -->
+      <button
+        class="px-10 py-4 mb-3 text-white text-xl bg-[#25DAC5] rounded-full hover:bg-blueBlack hover:bg-opacity-95 transition-slow"
+      >
+        Purchase Now for $248
+      </button>
+      <!-- ==================== -->
+      <p class="lg:mb-20">
+        <a
+          href=""
+          class="text-xl font-medium text-[#25DAC5] hover:text-blueBlack transition-slow"
+          >Learn More</a
+        >
+      </p>
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 2° Hero -->
+    <nav
+      class="flex flex-wrap justify-between bg-blueDark border-b-2 border-gray-400 border-opacity-25 lg:border-none px-10 py-6 lg:px-28 lg:py-14"
+    >
+      <!--=======================  -->
+      <a
+        href=""
+        class="text-2xl text-white font-bold font-Poppin hover:text-[#25DAC5] transition-slow"
+        >Startup 3</a
+      >
+      <!--=======================  -->
+      <button
+        data-collapse-toggle="navbar-default-2"
+        type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <!--=======================  -->
+      <ul
+        class="hidden md:flex items-center w-full md:w-auto md:gap-9 space-y-2 md:space-y-0"
+        id="navbar-default-2"
+      >
+        <li>
+          <a
+            href=""
+            class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+            >Subscribe</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+            >Features</a
+          >
+        </li>
+        <li>
+          <button
+            class="px-5 py-1.5 w-full text-lg text-white bg-[#482BE7] hover:bg-[#25DAC5] transition-slow rounded-full"
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- ===== -->
+    <div class="px-10 py-8 text-center bg-blueDark">
+      <!--=======================  -->
+      <h1
+        class="text-5xl lg:text-7xl text-white md:w-3/5 md:mx-auto text-center font-bold leading-snug lg:leading-tight"
+      >
+        Let’s make design fast and easy
+      </h1>
+      <!--=======================  -->
+      <p
+        class="text-base lg:text-[22px] lg:font-medium text-white leading-8 py-8 md:w-7/12 lg:w-6/12 md:mx-auto"
+      >
+        The most important part of the Startup is the samples. The samples form
+        a set of 25 usable pages you can use as is or you can add new blocks
+        from UI Kit.
+      </p>
+      <!--=======================  -->
+      <div class="pb-8">
+        <input
+          type="search"
+          placeholder="Your email"
+          class="px-4 lg:px-5 lg:py-3.5 lg:w-[350px] text-white lg:text-xl bg-transparent rounded-full border-2 border-white border-opacity-20 placeholder-white placeholder-opacity-40"
+        />
+        <button
+          class="text-lg lg:text-xl text-white lg:ml-1.5 lg:mt-10 px-5 lg:px-9 py-2 lg:py-4 lg:font-extrabold rounded-full bg-[#25DAC5] hover:bg-white hover:text-blueDark transition-slow"
+        >
+          Send
+        </button>
+      </div>
+      <p
+        class="text-base lg:text-lg text-white text-opacity-30 font-normal lg:pb-20"
+      >
+        By signing up, you agree to the Terms of Service
+      </p>
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 3° Hero -->
+    <nav class="p-8 lg:pl-28 lg:pr-20 lg:py-14 flex flex-wrap justify-between">
+      <!-- ========================== -->
+      <a
+        href=""
+        class="text-2xl my-auto md:w-full lg:w-auto text-center text-blueBlack hover:text-[#25DAC5] transition-slow font-bold"
+        >Startup 3</a
+      >
+      <button
+        data-collapse-toggle="navbar-default-3"
+        type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        class="hidden md:flex w-full md:w-auto lg:w-[87%] justify-between gap-40"
+        id="navbar-default-3"
+      >
+        <ul class="md:flex items-center gap-6">
+          <li>
+            <a
+              href=""
+              class="text-lg font-medium text-[#151439] text-opacity-40 hover:text-blueDark transition-slow"
+              >Products <i class="fa-solid fa-angle-down"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg font-medium text-[#151439] text-opacity-40 hover:text-blueDark transition-slow"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg font-medium text-[#151439] text-opacity-40 hover:text-blueDark transition-slow"
+              >Community</a
+            >
+          </li>
+        </ul>
+        <!-- ========================== -->
+        <ul class="md:flex items-center gap-6">
+          <li>
+            <a
+              href=""
+              class="text-lg font-medium text-[#151439] text-opacity-40 hover:text-blueDark transition-slow"
+              >API</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg font-medium text-[#151439] text-opacity-40 hover:text-blueDark transition-slow"
+              >Help</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg font-medium text-[#151439] text-opacity-40 hover:text-blueDark transition-slow"
+              >Login</a
+            >
+          </li>
+          <li>
+            <button
+              class="text-white rounded-full text-lg mt-3 lg:mt-0 px-5 w-full py-1.5 bg-[#25DAC5] hover:bg-blueBlack transition-slow"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ===== -->
+    <div class="p-8 pt-4 pb-20 lg:pt-14 lg:pl-28 lg:pr-20 lg:flex lg:gap-20">
+      <!-- ========================== -->
+      <div class="space-y-8 text-center lg:text-start">
+        <!-- ========================== -->
+        <h1
+          class="text-blueBlack text-3xl lg:mb-10 lg:text-[42px] lg:leading-tight text-center lg:text-start font-bold mb-4"
+        >
+          A high-quality solution for those who want a beautiful startup website
+          quickly
+        </h1>
+        <!-- ========================== -->
+        <input
+          type="search"
+          placeholder="Your email"
+          class="px-5 py-4 rounded-full border-2 border-gray-400 border-opacity-20 placeholder:text-gray-400 placeholder:font-medium placeholder:text-lg lg:placeholder:text-xl w-full md:w-[470px]"
+        />
+        <!-- ========================== -->
+        <input
+          type="search"
+          placeholder="Your password"
+          class="px-5 py-4 rounded-full border-2 border-gray-400 border-opacity-20 placeholder:text-gray-400 placeholder:font-medium placeholder:text-lg lg:placeholder:text-xl w-full md:w-[470px]"
+        />
+        <!-- ========================== -->
+        <button
+          class="px-5 py-3.5 rounded-full w-full md:w-[470px] text-white text-lg font-medium bg-[#25DAC5] hover:bg-blueBlack hover:shadow-2xl transition-slow"
+        >
+          Sign In
+        </button>
+        <!-- ========================== -->
+        <p class="text-sm lg:text-base lg:ml-16 text-gray-400">
+          By signing up, you agree to the Terms of Service
+        </p>
+      </div>
+      <!-- ========================== -->
+      <div>
+        <iframe
+          class="mt-10 lg:mt-4 rounded-xl w-full h-[190px] md:h-[400px] lg:w-[470px] lg:h-[265px]"
+          src="https://www.youtube.com/embed/9Xh1nt6ek-I"
+          title="YouTube video player"
+          frameborder="4"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+          ></iframe
+        >
+        <!-- ========================== -->
+        <p
+          class="text-lg md:w-2/4 lg:w-3/4 md:text-center lg:text-start md:mx-auto lg:mx-0 text-gray-400 font-medium text-opacity-80 mt-8"
+        >
+          We made it so beutiful and simple. It combines landings, pages, blogs
+          and shop screens. It is definitely the tool you need in your
+          collection!
+        </p>
+      </div>
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 4° Hero -->
+    <nav class="p-8 lg:pl-28 lg:pr-20 lg:py-14 flex flex-wrap justify-between">
+      <!-- ============== -->
+      <a
+        href=""
+        class="text-2xl font-bold text-blueBlack hover:text-[#25DAC5] transition-slow"
+        >Startup 3</a
+      >
+      <button
+        data-collapse-toggle="navbar-default-4"
+        type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        class="hidden md:flex md:gap-14 w-full md:w-auto lg:w-[87%] lg:justify-between"
+        id="navbar-default-4"
+      >
+        <ul
+          class="space-y-2 md:space-y-0 md:flex md:gap-6 lg:gap-8 items-center"
+        >
+          <li>
+            <a
+              href=""
+              class="text-lg text-gray-400 font-medium hover:text-blueBlack transition-slow"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-gray-400 font-medium hover:text-blueBlack transition-slow"
+              >Downloads</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-gray-400 font-medium hover:text-blueBlack transition-slow"
+              >Docs</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-gray-400 font-medium hover:text-blueBlack transition-slow"
+              >Support</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-gray-400 font-medium hover:text-blueBlack transition-slow"
+              >Blog</a
+            >
+          </li>
+        </ul>
+        <!-- ============== -->
+        <ul class="flex items-center gap-8 mt-4 md:mt-0">
+          <li>
+            <a href=""
+              ><i
+                class="fa-brands fa-twitter text-gray-400 hover:text-cyan-400 transition-slow"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i
+                class="fa-brands fa-facebook text-gray-400 hover:text-blue-600 transition-slow"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href=""
+              ><i
+                class="fa-brands fa-google-plus-g text-gray-400 hover:text-orange-500 transition-slow"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- ===== -->
+    <div
+      class="p-8 lg:pl-28 lg:pr-20 md:py-14 mb-10 lg:mb-16 space-y-10 lg:space-y-24"
+    >
+      <h1
+        class="text-2xl md:text-5xl lg:text-[58px] lg:w-[70%] lg:mx-auto font-bold text-blueBlack text-center"
+      >
+        Simple and beautiful ready for use blocks
+      </h1>
+      <iframe
+        class="mt-10 lg:mt-4 w-full h-[190px] md:h-[400px] lg:w-[770px] lg:h-[470px] lg:mx-auto"
+        src="https://www.youtube.com/embed/9Xh1nt6ek-I"
+        title="YouTube video player"
+        frameborder="4"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+        ></iframe
+      >
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 5° Hero -->
+    <nav
+      class="p-8 lg:pl-28 lg:pr-20 lg:py-14 flex flex-wrap justify-between md:justify-center lg:justify-between"
+    >
+      <a
+        href=""
+        class="text-2xl text-blueBlack font-bold hover:text-[#25DAC5] transition-slow"
+        >Startup 3</a
+      >
+      <button
+        data-collapse-toggle="navbar-default-5"
+        type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul
+        class="hidden md:flex w-full lg:w-auto space-y-2 md:space-y-0 md:gap-8 md:justify-center md:pt-4 lg:pt-0 lg:items-center"
+        id="navbar-default-5"
+      >
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+            >How it Works</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+            >Pricing</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+            >Login</a
+          >
+        </li>
+        <li>
+          <button
+            class="px-6 py-1 w-full text-lg rounded-full border-2 border-gray-400 border-opacity-40 text-blueBlack font-medium hover:text-white hover:bg-[#25DAC5] transition-slow"
+          >
+            Sign In
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- ===== -->
+    <div
+      class="p-8 lg:pl-28 lg:pr-20 lg:py-14 text-center space-y-10 lg:space-y-14"
+    >
+      <h1
+        class="text-4xl md:text-5xl lg:text-[58px] md:w-4/5 md:mx-auto text-blueBlack font-bold"
+      >
+        A high-quality solution startup website quickly
+      </h1>
+      <button
+        class="px-8 py-4 text-xl text-white font-medium rounded-full bg-[#25DAC5] hover:text-white hover:bg-blueBlack hover:shadow-2xl transition-slow"
+      >
+        Get Started
+      </button>
+      <img
+        src="./public/images/Macbook Pro.png"
+        class="lg:mx-auto"
+        alt="macbook"
+      />
+      <div
+        class="space-y-4 md:space-y-0 md:flex md:gap-4 lg:gap-0 lg:pt-4 lg:justify-center"
+      >
+        <p
+          class="text-lg text-gray-400 text-opacity-80 font-medium border-b-2 md:border-b-0 md:border-r-2 md:pr-4 border-gray-400 border-opacity-20 pb-4 lg:py-5 lg:px-8"
+        >
+          Startup Framework works on devices supporting Retina Display. Feel the
+          clarity in each pixel.
+        </p>
+        <p
+          class="text-lg text-gray-400 text-opacity-80 font-medium border-b-2 md:border-b-0 md:border-r-2 md:pr-4 border-gray-400 border-opacity-20 pb-4 lg:py-5 lg:px-12"
+        >
+          There are a lot of different components that will help you create the
+          perfect look and feel for your startup.
+        </p>
+        <p
+          class="text-lg text-gray-400 text-opacity-80 font-medium lg:py-5 lg:px-10"
+        >
+          You can easily combine components in a variety ways for different
+          design projects. It’s easy!
+        </p>
+      </div>
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 6° Hero -->
+    <section class="bg-bgBird bg-blueBlack bg-opacity-95 bg-top">
+      <!-- ===== -->
+      <nav
+        class="p-8 lg:pl-52 lg:pr-44 lg:py-16 flex flex-wrap items-center justify-between"
+      >
+        <!-- =========== -->
+        <a
+          href=""
+          class="order-1 text-2xl text-white font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- =========== -->
+        <button
+          data-collapse-toggle="navbar-default-6"
+          type="button"
+          class="inline-flex items-center order-2 p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- =========== -->
+        <div
+          class="hidden md:flex w-full md:w-[75%] md:justify-between md:items-center order-2"
+          id="navbar-default-6"
+        >
+          <ul class="md:flex md:gap-8 space-y-3 md:space-y-0">
+            <li>
+              <a
+                href=""
+                class="text-lg font-medium text-white hover:text-[#25DAC5] transition-slow"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg font-medium text-white hover:text-[#25DAC5] transition-slow"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg font-medium text-white hover:text-[#25DAC5] transition-slow"
+                >Community</a
+              >
+            </li>
+          </ul>
+          <!-- =========== -->
+          <div class="flex flex-wrap gap-2 pt-3 md:pt-0">
+            <button
+              class="w-full md:w-auto py-1.5 px-5 text-lg text-white hover:text-[#25DAC5] transition-slow font-medium rounded-full bg-[#25DAC5] md:bg-transparent"
+            >
+              Login
+            </button>
+            <button
+              class="w-full md:w-auto py-1.5 px-5 text-lg text-white font-medium rounded-full bg-[#25DAC5] hover:bg-[#EA3223] transition-slow"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- ===== -->
+      <div
+        class="p-8 pt-0 lg:pl-28 lg:pr-20 lg:pb-8 text-center space-y-10 md:space-y-20"
+      >
+        <!-- =========== -->
+        <p
+          class="text-4xl md:text-5xl lg:text-[58px] lg:w-2/3 lg:mx-auto text-white font-bold leading-tight md:leading-tight"
+        >
+          A high-quality solution for those who want a beautiful startup website
+          quickly
+        </p>
+        <!-- =========== -->
+        <button
+          class="px-7 py-5 bg-[#EA3223] rounded-full hover:bg-[#25DAC5] transition-slow"
+        >
+          <i class="fa-sharp fa-solid fa-play text-white text-xl"></i>
+        </button>
+        <!-- =========== -->
+        <p
+          class="text-lg md:w-2/3 lg:w-[45%] md:mx-auto text-white font-medium"
+        >
+          We made it so beutiful and simple. It combines landings, pages, blogs
+          and shop screens. It is definitely the tool you need in your
+          collection!
+        </p>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 7° Hero -->
+    <section class="md:flex">
+      <!-- ===== -->
+      <div class="p-8 lg:pl-20 lg:pr-28 lg:py-20">
+        <nav class="flex justify-between">
+          <a
+            href=""
+            class="text-2xl text-blueBlack font-bold hover:text-[#25DAC5] transition-slow"
+            >Startup 3</a
+          >
+          <!-- ================== -->
+          <ul class="flex items-center gap-4 lg:gap-10">
+            <li>
+              <a
+                href=""
+                class="text-gray-400 font-medium hover:text-blueBlack transition-slow"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-gray-400 font-medium hover:text-blueBlack transition-slow"
+                >About</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- ==================== -->
+        <div class="pt-16 lg:pt-[120px] text-center lg:text-start">
+          <h1
+            class="text-5xl lg:text-[58px] lg:leading-[70px] lg:tracking-[-1px] text-blueBlack font-bold"
+          >
+            Great tool to boost your startup
+          </h1>
+          <!-- ================== -->
+          <p
+            class="py-10 lg:py-5 lg:w-[80%] text-lg text-gray-400 text-opacity-70 font-medium"
+          >
+            We made it so beutiful and simple. It combines landings, pages,
+            blogs and shop screens. It is definitely the tool you need in your
+            collection!
+          </p>
+          <!-- ================== -->
+          <div class="space-y-4 lg:space-x-2 lg:pt-10">
+            <button
+              class="px-8 py-[14px] w-full md:w-auto rounded-full border-2 border-[#25DAC5] hover:border-blueBlack bg-[#25DAC5] text-lg text-white font-medium hover:bg-blueBlack transition-slow"
+            >
+              Get started
+            </button>
+            <button
+              class="px-8 py-[14px] w-full md:w-auto rounded-full border-2 border-gray-400 border-opacity-20 text-lg text-blueBlack font-medium hover:text-white hover:border-[#25DAC5] hover:bg-[#25DAC5] transition-slow"
+            >
+              Learn More
+            </button>
+          </div>
+          <!-- ================== -->
+          <p class="pt-10 lg:pt-5 text-gray-400">
+            By signing up, you agree to the Terms of Service
+          </p>
+        </div>
+      </div>
+      <!-- ===== -->
+      <img
+        src="./public/images/Photo.png"
+        class="md:w-2/4 lg:w-[575px]"
+        alt=""
+      />
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 8° Hero -->
+    <!-- Carousel wrapper -->
+    <div
+      class="relative overflow-hidden w-full p-8 md:py-20"
+      id="default-carousel"
+      data-carousel="slide"
+    >
+      <nav
+        class="relative z-50 flex flex-wrap justify-between md:justify-center items-center"
+      >
+        <a
+          href=""
+          class="text-lg text-white text-opacity-30 font-medium md:mr-10 hover:text-white"
+          >Home</a
+        >
+        <!-- =========== -->
+        <button
+          data-collapse-toggle="navbar-default-8"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- =========== -->
+        <ul
+          class="hidden w-full md:flex md:w-auto space-y-3 md:space-y-0 md:items-center md:gap-10"
+          id="navbar-default-8"
+        >
+          <li
+            class="border-b md:border-none border-white border-opacity-30 pb-2 md:pb-0"
+          >
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:border-b transition-slow lg:pb-2"
+              >Features</a
+            >
+          </li>
+          <li
+            class="border-b md:border-none border-white border-opacity-30 pb-2 md:pb-0"
+          >
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:border-b transition-slow lg:pb-2"
+              >Pricing</a
+            >
+          </li>
+          <li
+            class="border-b md:border-none border-white border-opacity-30 pb-2 md:pb-0"
+          >
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:border-b transition-slow lg:pb-2"
+              >Blog</a
+            >
+          </li>
+          <li
+            class="border-b md:border-none border-white border-opacity-30 pb-2 md:pb-0"
+          >
+            <a href=""
+              ><i
+                class="fa-brands fa-dribbble text-white hover:border-b transition-slow lg:pb-2"
+              ></i
+            ></a>
+          </li>
+          <li
+            class="border-b md:border-none border-white border-opacity-30 pb-2 md:pb-0"
+          >
+            <a href=""
+              ><i
+                class="fa-brands fa-behance text-white hover:border-b transition-slow lg:pb-2"
+              ></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- =========== -->
+      <div
+        class="relative z-50 text-center space-y-10 md:space-y-20 lg:space-y-10 pt-10 md:pt-20 lg:pt-32"
+      >
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-[#482BE7] transition-slow"
+          >Startup 3</a
+        >
+        <!-- ======== -->
+        <h1 class="text-5xl lg:text-7xl text-white font-bold">
+          Forget About Code
+        </h1>
+        <!-- ======== -->
+        <p
+          class="text-xl lg:text-[22px] lg:w-3/5 lg:mx-auto lg:leading-[32px] text-white font-medium"
+        >
+          Startup Framework gives you complete freedom over your creative
+          process — you don’t have to think about any technical aspects. There
+          are no limits and absolutely no coding.
+        </p>
+        <!-- ======== -->
+        <!-- Slider indicators -->
+        <div class="z-30 flex justify-center space-x-3">
+          <button
+            type="button"
+            class="w-2.5 h-2.5 rounded-full"
+            aria-current="false"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-2.5 h-2.5 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-2.5 h-2.5 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            class="w-2.5 h-2.5 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            class="w-2.5 h-2.5 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="4"
+          ></button>
+        </div>
+        <!-- ======== -->
+        <button
+          class="px-9 py-4 text-lg bg-[#482BE7] rounded-full text-white font-medium hover:bg-white hover:text-black transition-slow"
+        >
+          Create an Account
+        </button>
+      </div>
+      <!-- =========== -->
+      <!-- Item 1 -->
+      <div class="hidden duration-[2000ms]" data-carousel-item="active">
+        <img
+          src="./public/images/montains.png"
+          class="absolute bg-blueBlack bg-opacity-95 block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-[2000ms]" data-carousel-item>
+        <img
+          src="./public/images/paisaje.jpg"
+          class="absolute block bg-blueBlack bg-opacity-95 w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-[2000ms]" data-carousel-item>
+        <img
+          src="./public/images/paisaje-2.jpg"
+          class="absolute block bg-blueBlack bg-opacity-95 w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-[2000ms]" data-carousel-item>
+        <img
+          src="./public/images/paisaje-3.jpg"
+          class="absolute block w-full h-full bg-blueBlack bg-opacity-95 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-[2000ms]" data-carousel-item>
+        <img
+          src="./public/images/paisaje-4.jpg"
+          class="absolute block w-full h-full bg-blueBlack bg-opacity-95 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+      </div>
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 9° Hero -->
+    <nav
+      class="p-10 pb-5 md:pt-20 lg:px-44 lg:pl-52 flex flex-wrap justify-between items-center"
+    >
+      <!-- ======= -->
+      <a
+        href=""
+        class="text-2xl text-blueBlack font-bold hover:text-blue-500 transition-slow"
+        >Startup 3</a
+      >
+      <!-- ======= -->
+      <button
+        data-collapse-toggle="navbar-default-9"
+        type="button"
+        class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default-2"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <!-- ======= -->
+      <ul
+        class="hidden md:flex w-full md:w-auto md:items-center md:gap-10 space-y-3 md:space-y-0 pt-4 md:pt-0"
+        id="navbar-default-9"
+      >
+        <li>
+          <a
+            href=""
+            class="text-lg text-gray-400 text-opacity-60 font-medium hover:text-blue-500 transition-slow"
+            >Overview</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-blue-500 transition-slow"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-blue-500 transition-slow"
+            >Company</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-lg text-blueBlack font-medium hover:text-blue-500 transition-slow"
+            >Platform</a
+          >
+        </li>
+        <li>
+          <button
+            class="px-5 py-1 w-full md:w-auto text-lg text-blueBlack hover:bg-[#482BE7] hover:text-white transition-slow font-medium border-2 border-gray-400 border-opacity-20 rounded-full"
+          >
+            Purchase
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <!-- ======= -->
+    <div
+      class="p-10 md:pb-16 lg:pt-24 lg:px-44 lg:pl-52 lg:flex lg:justify-between"
+    >
+      <!-- ========= -->
+      <div class="text-center lg:text-start space-y-10 pb-10 lg:w-2/4">
+        <!-- ======= -->
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl lg:tracking-[-1px] lg:leading-[70px] text-blueBlack font-bold"
+        >
+          You have the design, you have the code
+        </h1>
+        <!-- ======= -->
+        <p class="text-lg text-gray-400 text-opacity-70 lg:w-5/6 font-medium">
+          We made it so beutiful and simple. It combines landings, pages, blogs
+          and shop screens. It is definitely the tool you need in your
+          collection!
+        </p>
+        <!-- ======= -->
+        <button
+          class="px-9 py-4 text-[20px] text-white font-medium rounded-full bg-[#482BE7] hover:bg-blue-400 transition-slow"
+        >
+          Explore Design
+        </button>
+      </div>
+      <!-- ========= -->
+      <img
+        src="./public/images/oval.png"
+        class="md:mx-auto lg:mx-0 lg:w-[370px] lg:h-[370px]"
+        alt="Oval"
+      />
+    </div>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 10° Hero -->
+    <section class="p-8 py-14 lg:px-44 lg:pl-52 space-y-10 bg-blueDark">
+      <nav class="flex flex-wrap justify-between items-center">
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- ======= -->
+        <button
+          data-collapse-toggle="navbar-default-10"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ========= -->
+        <div
+          class="hidden md:flex w-full md:w-[80%] lg:w-[85%] md:justify-between"
+          id="navbar-default-10"
+        >
+          <!-- ======= -->
+          <ul
+            class="space-y-2 md:space-y-0 md:flex md:items-center md:gap-8 pt-2 md:pt-0"
+          >
+            <li
+              class="border-b border-white border-opacity-40 md:border-none pb-2"
+            >
+              <a
+                href=""
+                class="text-base text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Products</a
+              >
+            </li>
+            <li
+              class="border-b border-white border-opacity-40 md:border-none pb-2"
+            >
+              <a
+                href=""
+                class="text-base text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Pricing</a
+              >
+            </li>
+            <li
+              class="border-b border-white border-opacity-40 md:border-none pb-2"
+            >
+              <a
+                href=""
+                class="text-base text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Community</a
+              >
+            </li>
+          </ul>
+          <!-- ======= -->
+          <ul
+            class="space-y-2 md:space-y-0 md:flex md:items-center md:gap-10 pt-2 md:pt-0"
+          >
+            <li
+              class="border-b border-white border-opacity-40 md:border-none pb-2"
+            >
+              <a
+                href=""
+                class="text-base text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Help</a
+              >
+            </li>
+            <li class="pb-2">
+              <a
+                href=""
+                class="text-base text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Login</a
+              >
+            </li>
+            <li>
+              <button
+                class="text-base text-white font-medium px-4 py-1.5 w-full md:w-auto rounded-full border-2 border-gray-400 border-opacity-40 hover:bg-[#25DAC5] transition-slow"
+              >
+                Sign Up
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- ================================= -->
+      <div class="text-center space-y-8 md:space-y-12 lg:space-y-0 md:pt-10">
+        <!-- ====== -->
+        <p
+          class="text-4xl md:text-5xl lg:text-[58px] lg:leading-[70px] lg:w-4/5 lg:mx-auto lg:tracking-[-1px] text-white font-bold"
+        >
+          A high-quality solution for those who want a beautiful startup website
+          quickly
+        </p>
+        <!-- ====== -->
+        <p
+          class="text-xl md:text-[22px] lg:leading-8 lg:w-4/6 lg:pt-6 lg:pb-20 lg:mx-auto text-white font-medium"
+        >
+          Startup contains components and complex blocks which can easily be
+          integrated into almost any design.
+        </p>
+        <!-- ====== -->
+        <button
+          class="px-10 py-5 text-xl text-white font-medium bg-[#25DAC5] rounded-full hover:bg-white hover:text-blueBlack hover:shadow-2xl transition-slow"
+        >
+          Get Started for Free
+        </button>
+        <!-- ====== -->
+        <div
+          class="space-y-8 md:flex md:space-y-0 md:gap-6 pt-10 lg:pt-24 lg:px-20"
+        >
+          <div class="md:flex md:gap-4">
+            <video
+              class="rounded-xl shadow-lg md:h-[110px] md:w-[200px]"
+              muted
+              autoplay
+            >
+              <source src="./public/videos/espacio.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p
+              class="pt-4 md:w-2/4 md:text-start md:pt-0 text-lg text-white font-medium"
+            >
+              A high-quality solution for a beautiful startup website.
+            </p>
+          </div>
+          <!-- =========== -->
+          <div class="md:flex md:gap-4">
+            <video
+              class="rounded-xl shadow-lg md:h-[110px] md:w-[200px]"
+              muted
+              autoplay
+            >
+              <source src="./public/videos/naturaleza.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p
+              class="pt-4 md:w-2/4 md:text-start md:pt-0 text-lg text-white font-medium"
+            >
+              Learn more about Startup Framework in demo version.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 11° Hero -->
+    <section class="p-8 py-14 lg:px-44 lg:pl-52">
+      <nav class="flex flex-wrap justify-between items-center">
+        <a
+          href=""
+          class="text-2xl text-blueBlack font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- ======= -->
+        <button
+          data-collapse-toggle="navbar-default-11"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ========= -->
+        <ul
+          class="hidden md:flex w-full md:w-auto space-y-3 md:space-y-0 items-center md:gap-8"
+          id="navbar-default-11"
+        >
+          <li>
+            <a
+              href=""
+              class="text-lg text-gray-400 text-opacity-50 font-medium hover:text-[#25DAC5] transition-slow"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+              >Contacts</a
+            >
+          </li>
+          <li>
+            <button
+              class="text-lg text-white font-medium bg-[#482BE7] rounded-full px-6 py-1.5 w-full md:w-auto hover:bg-[#25DAC5] transition-slow"
+            >
+              Buy
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- ============== -->
+      <div
+        class="text-cente lg:text-start space-y-7 pt-10 lg:flex lg:justify-between"
+      >
+        <div
+          class="space-y-10 md:space-y-16 lg:space-y-0 lg:flex lg:flex-col text-center lg:justify-center lg:gap-8 md:pt-16 lg:w-2/5"
+        >
+          <h1
+            class="text-5xl lg:text-[58px] lg:leading-[70px] lg:tracking-[-1px] text-blueBlack font-bold"
+          >
+            Great things begin in a small way
+          </h1>
+          <!-- ======= -->
+          <p
+            class="text-xl lg:text-[22px] text-gray-400 text-opacity-50 font-medium lg:w-11/12"
+          >
+            We haven’t forgotten about responsive layout. With Startup
+            Framework, you can create a website with full mobile support.
+          </p>
+          <!-- ======= -->
+          <div class="lg:pt-8">
+            <button
+              class="px-6 py-3 text-lg text-white font-medium bg-[#25DAC5] rounded-full hover:bg-blueBlack transition-slow"
+            >
+              Get Started
+            </button>
+            <button
+              class="px-6 py-3 text-lg text-blueBlack font-medium hover:text-[#25DAC5] transition-slow"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <img
+          src="./public/images/iPad Pro.png"
+          class="pt-10 md:mx-auto lg:mx-0"
+          alt="ipad"
+        />
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 12° Hero -->
+    <section class="p-8 py-14 lg:px-44 lg:py-24 lg:pl-52 bg-[#2F1893] lg:flex">
+      <!-- =========== -->
+      <div
+        class="text-center lg:my-auto lg:text-start space-y-8 md:space-y-14 lg:space-y-0 pb-10 lg:pb-0"
+      >
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- ====== -->
+        <p
+          class="text-[39px] md:text-5xl lg:text-[58px] md:w-3/4 lg:w-5/6 lg:pt-10 lg:pb-6 md:mx-auto lg:mx-0 text-white font-bold lg:leading-[70px] tracking-[-1px]"
+        >
+          Beautiful Startup Framework for Your Next Project
+        </p>
+        <!-- ====== -->
+        <p
+          class="text-[22px] md:w-2/3 lg:w-[371px] md:mx-auto lg:mx-0 lg:pb-10 text-white font-medium leading-8"
+        >
+          A high-quality solution for those who want a bea-utiful startup
+          website quickly.
+        </p>
+        <!-- ====== -->
+        <button
+          class="px-8 py-4 text-lg text-white font-medium rounded-full bg-[#25DAC5] hover:bg-blueDark shadow-transform transition-slow"
+        >
+          Download from App Store
+        </button>
+      </div>
+      <!-- =========== -->
+      <img
+        src="./public/images/phone.png"
+        class="md:mx-auto lg:mx-0 lg:w-[753px] lg:h-[753px]"
+        alt=""
+      />
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 13° Hero -->
+    <section
+      class="bg-bgSweet bg-blueBlack bg-opacity-95 bg-top p-8 py-14 lg:px-44 lg:py-24 lg:pl-52"
+    >
+      <nav class="flex flex-wrap justify-between">
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-blueBlack transition-slow"
+          >Startup 3</a
+        >
+        <!-- =========== -->
+        <button
+          data-collapse-toggle="navbar-default-13"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ========== -->
+        <div
+          class="hidden w-full md:flex md:w-auto lg:justify-between lg:w-3/4"
+          id="navbar-default-13"
+        >
+          <ul
+            class="space-y-2 md:space-y-0 pb-2 md:pb-0 md:flex md:items-center md:gap-4 md:pr-4 lg:gap-8"
+          >
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-blueBlack transition-slow"
+                >Tour</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-blueBlack transition-slow"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-blueBlack transition-slow"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-blueBlack transition-slow"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-dribbble text-white hover:text-blueBlack transition-slow"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram text-white hover:text-blueBlack transition-slow"
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-behance text-white hover:text-blueBlack transition-slow"
+                ></i
+              ></a>
+            </li>
+          </ul>
+          <!-- ========== -->
+          <button
+            class="w-full lg:w-auto text-base text-white px-4 py-2 bg-[#482BE7] rounded-full hover:bg-pink-500 transition-slow shadow-transform"
+          >
+            Get Started
+          </button>
+        </div>
+      </nav>
+      <!-- ============================== -->
+      <div class="text-center pt-14 md:pt-20 lg:pt-24">
+        <h1
+          class="text-5xl lg:text-7xl text-white font-bold pb-10 md:w-2/4 lg:w-2/3 md:mx-auto lg:leading-[86px] lg:tracking-[-1px]"
+        >
+          Create sites without routine
+        </h1>
+        <!-- =========== -->
+        <p
+          class="text-lg lg:text-[22px] text-white font-medium md:w-2/4 lg:w-[513px] md:mx-auto lg:leading-8"
+        >
+          Startup gives you complete freedom over your creative process — you
+          don’t have to think about any technical aspects. There are no limits
+          and absolutely no coding.
+        </p>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 14° Hero -->
+    <section class="p-8 py-14 lg:px-44 lg:py-24 lg:pl-52 bg-[#2F1893]">
+      <nav class="flex flex-wrap items-center justify-between pb-10">
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-[#E93A7D] transition-slow"
+          >Startup 3</a
+        >
+        <!-- =========== -->
+        <button
+          data-collapse-toggle="navbar-default-14"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ============= -->
+        <ul
+          class="hidden md:flex md:items-center md:gap-8 w-full md:w-auto space-y-3 md:space-y-0 pt-5 md:pt-0"
+          id="navbar-default-14"
+        >
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-[#E93A7D] transition-slow text-opacity-30"
+              >Overview</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-[#E93A7D] transition-slow"
+              >Prices</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-[#E93A7D] transition-slow"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-[#E93A7D] transition-slow"
+              >Feedback</a
+            >
+          </li>
+          <li>
+            <button
+              class="px-5 py-1.5 w-full md:w-auto rounded-full bg-[#E93A7D] hover:bg-[#1DA1F2] transition-slow text-white text-lg font-medium"
+            >
+              Purchase
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- ======== -->
+      <div class="text-center md:pt-10 lg:flex lg:items-center">
+        <div
+          class="space-y-6 md:space-y-10 pb-6 md:pb-0 lg:text-start lg:w-2/4"
+        >
+          <h1
+            class="text-5xl md:text-7xl lg:text-[58px] text-white font-bold lg:leading-[70px] lg:tracking-[-1px]"
+          >
+            Generate Awesome Web Pages
+          </h1>
+          <!-- ============== -->
+          <p
+            class="text-lg lg:text-[22px] text-white font-medium md:w-4/6 lg:w-3/4 md:mx-auto lg:mx-0 lg:leading-[32px]"
+          >
+            The most important part of the Startup is the samples. The samples
+            form a set of 25 usable pages you can use as is or you can add new
+            blocks.
+          </p>
+          <!-- ============== -->
+          <button
+            class="px-8 py-3 bg-[#E93A7D] text-white text-lg font-medium rounded-full hover:bg-[#1DA1F2] transition-slow shadow-transform"
+          >
+            Learn More
+          </button>
+        </div>
+        <!-- =========================== -->
+        <div
+          class="bg-white p-8 md:p-16 md:mt-14 lg:mt-0 text-start flex flex-col rounded-[10px] md:mx-auto md:w-[470px]"
+        >
+          <h1
+            class="text-center text-4xl md:text-[42px] pb-8 md:pb-10 text-[#1E0E62] font-bold"
+          >
+            Sign Up Now
+          </h1>
+          <!-- ====== -->
+          <input
+            type="email"
+            placeholder="Your email"
+            class="border-2 border-[#EBEAED] rounded-full px-6 py-2.5 placeholder:text-lg placeholder:text-[#151439] placeholder:text-opacity-40 placeholder:font-medium mb-5"
+          />
+          <!-- ====== -->
+          <input
+            type="email"
+            placeholder="Your password"
+            class="border-2 border-[#EBEAED] rounded-full px-6 py-2.5 placeholder:text-lg placeholder:text-[#151439] placeholder:text-opacity-40 placeholder:font-medium"
+          />
+          <!-- ====== -->
+
+          <!-- ====== -->
+          <label
+            for="checkbox-verificate"
+            class="text-sm md:text-base font-normal py-5 md:py-8 text-[#151439] flex items-center text-opacity-40"
+            ><input
+              class="h-5 w-5 bg-white mr-2 md:mr-3 border border-gray-400 rounded-md cursor-pointer"
+              type="checkbox"
+              id="checkbox-verificate"
+            />
+            I agree to the Terms of Service.</label
+          >
+          <!-- ====== -->
+          <button
+            class="text-lg text-white font-meidum bg-[#482BE7] rounded-full w-full py-3 hover:bg-[#E93A7D] transition-slow shadow-transform"
+          >
+            Sign In
+          </button>
+          <!-- ====== -->
+          <div class="flex items-center justify-center py-4 gap-3">
+            <hr class="w-2/5 border border-[#ebeaed]" />
+            <span class="text-blueBlack text-opacity-40">or</span>
+            <hr class="w-2/5 border border-[#ebeaed]" />
+          </div>
+          <!-- ====== -->
+          <button
+            class="text-lg text-white font-meidum bg-[#1DA1F2] rounded-full w-full py-3 hover:bg-[#E93A7D] transition-slow shadow-transform"
+          >
+            Login via Twitter
+          </button>
+          <!-- ====== -->
+          <div class="flex justify-center items-center pt-5 gap-2">
+            <p
+              class="text-sm md:text-lg text-blueBlack text-opacity-40 font-medium"
+            >
+              Do you have an Account?
+            </p>
+            <!-- ==== -->
+            <a href="" class="md:text-lg text-[#25DAC5] font-medium">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 15° Hero -->
+    <section class="p-8 py-14 lg:px-44 lg:py-14 lg:pl-52">
+      <nav class="flex flex-wrap justify-between items-center">
+        <a
+          href=""
+          class="text-2xl text-blueBlack font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- =========== -->
+        <button
+          data-collapse-toggle="navbar-default-15"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ======== -->
+        <ul
+          class="hidden md:flex w-full md:w-4/5 lg:w-2/3 md:gap-8 space-y-2 md:space-y-0 pt-2 md:pt-0 md:items-center"
+          id="navbar-default-15"
+        >
+          <li>
+            <a
+              href=""
+              class="text-base text-[#151439] text-opacity-40 font-medium hover:text-[#25DAC5] transition-slow"
+              >Tour</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-base text-[#151439] text-opacity-40 font-medium hover:text-[#25DAC5] transition-slow"
+              >Prices</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-base text-[#151439] text-opacity-40 font-medium hover:text-[#25DAC5] transition-slow"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-base text-[#151439] text-opacity-40 font-medium hover:text-[#25DAC5] transition-slow"
+              >F.A.Q.</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-base text-[#151439] text-opacity-40 font-medium hover:text-[#25DAC5] transition-slow"
+              >Support</a
+            >
+          </li>
+          <!-- ======== -->
+          <ul class="w-full md:w-auto md:ml-auto lg:gap-4 md:flex">
+            <button
+              class="text-base text-[#25DAC5] font-medium hover:text-blueBlack px-4 py-2 w-full md:w-auto transition-slow"
+            >
+              Login
+            </button>
+            <button
+              class="text-lg text-white bg-[#25DAC5] hover:bg-blueBlack rounded-full font-medium px-5 py-1.5 w-full md:w-auto transition-slow"
+            >
+              Sign Up
+            </button>
+          </ul>
+        </ul>
+      </nav>
+      <!-- ==================== -->
+      <div
+        class="pt-10 md:pt-20 text-center space-y-9 md:space-y-14 lg:space-y-0"
+      >
+        <h1
+          class="text-5xl lg:text-[58px] text-blueBlack lg:leading-[70px] lg:tracking-[-1px] font-bold md:w-5/6 md:mx-auto lg:pb-8"
+        >
+          Build Your Own Site like a Lego Constructor
+        </h1>
+        <!-- ======== -->
+        <p
+          class="text-xl md:text-[22px] text-[#151439] lg:leading-[32px] text-opacity-40 font-medium md:w-4/5 lg:w-[61%] md:mx-auto lg:pb-14"
+        >
+          We have created a new product that will help designers, developers and
+          companies create websites for their startups quickly and easily.
+        </p>
+        <!-- ======== -->
+        <button
+          class="text-lg md:text-xl text-white font-medium px-10 py-4 bg-[#E93A7D] rounded-full hover:bg-[#25DAC5] shadow-transform transition-slow"
+        >
+          Create an Account
+        </button>
+        <!-- ======== -->
+        <div
+          class="flex flex-wrap lg:flex-nowrap space-y-6 lg:space-y-0 pt-10 lg:pt-24 md:justify-center lg:justify-between lg:w-full lg:gap-26"
+        >
+          <div>
+            <img
+              src="./public/images/mini-photo-1.png"
+              class="mx-auto pb-6 transform hover:-translate-y-2 hover:scale-100"
+              alt="woman"
+            />
+            <p
+              class="text-lg text-[#151439] font-medium text-opacity-40 md:w-3/5 md:mx-auto lg:w-[228px]"
+            >
+              A high-quality solution for a beautiful startup website.
+            </p>
+          </div>
+          <!-- =============== -->
+          <hr class="w-2/4 border border-[#EBEAED] mx-auto lg:hidden" />
+          <!-- =============== -->
+          <div>
+            <img
+              src="./public/images/mini-photo-2.png"
+              class="lg:border-x-2 lg:border-gray-400 lg:border-opacity-20 lg:px-24 mx-auto pb-6 transform hover:-translate-y-2 hover:scale-100"
+              alt="woman"
+            />
+            <p
+              class="text-lg text-[#151439] font-medium text-opacity-40 md:w-3/5 md:mx-auto lg:w-[228px] lg:mx-auto"
+            >
+              Startups can save money on design and code and use those savings
+              to develop the business.
+            </p>
+          </div>
+          <!-- =============== -->
+          <hr class="w-2/4 border border-[#EBEAED] mx-auto lg:hidden" />
+          <!-- =============== -->
+          <div>
+            <img
+              src="./public/images/mini-photo-3.png"
+              class="mx-auto pb-6 transform hover:-translate-y-2 hover:scale-100"
+              alt="woman"
+            />
+            <p
+              class="text-lg text-[#151439] font-medium text-opacity-40 md:w-3/5 md:mx-auto lg:w-[228px]"
+            >
+              Startup Framework includes great form options for your startup
+              projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 16° Hero -->
+    <section
+      class="p-8 py-14 lg:pr-0 lg:py-14 lg:pl-52 bg-bgLadders bg-[#2F1893] bg-cover md:bg-top lg:bg-contain"
+    >
+      <!-- ---------------- NAVBAR ----------------- -->
+      <nav class="flex flex-wrap justify-between items-center lg:pr-44">
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- =========== -->
+        <button
+          data-collapse-toggle="navbar-default-16"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ------------- ============ -------------- -->
+        <div
+          class="hidden md:flex w-full md:w-auto lg:w-[85%] lg:justify-between"
+          id="navbar-default-16"
+        >
+          <!-- ------------------ UL ------------------- -->
+          <ul
+            class="md:flex space-y-2 md:space-y-0 md:items-center md:gap-6 md:mr-6 py-2 md:py-0"
+          >
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Tour</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Prices</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >F.A.Q.</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-lg text-white font-medium hover:text-[#25DAC5] transition-slow"
+                >Support</a
+              >
+            </li>
+          </ul>
+          <button
+            class="text-lg text-white font-medium bg-[#25DAC5] rounded-full px-5 py-1.5 w-full md:w-auto hover:bg-blueBlack transition-slow"
+          >
+            Buy $38
+          </button>
+        </div>
+      </nav>
+      <!-- ----------------- HERO ------------------ -->
+      <div class="text-center lg:text-start lg:flex pt-16 md:pt-24">
+        <div>
+          <h1
+            class="text-5xl md:text-6xl lg:text-[72px] text-white font-bold lg:leading-[86px] lg:tracking-[-1px]"
+          >
+            Suit Up Your Startup
+          </h1>
+          <!-- ------------------- P ------------------- -->
+          <p
+            class="py-8 text-[22px] md:w-2/3 lg:w-5/6 md:mx-auto lg:mx-0 text-white font-medium leading-8"
+          >
+            We have created a new product that will help designers, developers
+            and companies create websites for their startups quickly and easily.
+          </p>
+          <!-- ------------------ DIV ------------------ -->
+          <div class="py-14 lg:pb-0 lg:pt-20 space-y-10 lg:space-y-0 lg:flex">
+            <!-- ------------------- DIV ------------------- -->
+            <div class="space-y-3 lg:space-y-6 lg:w-2/4">
+              <img
+                src="./public/images/fa-gears.png"
+                class="mx-auto lg:mx-0"
+                alt="gears"
+              />
+              <!-- ----------------- Title ----------------- -->
+              <h1 class="text-xl text-white font-medium leading-[26px]">
+                Based on Bootstrap 4
+              </h1>
+              <!-- --------------- Paragraph --------------- -->
+              <p
+                class="text-base text-white font-normal md:w-2/3 lg:w-5/6 md:mx-auto lg:mx-0 leading-[26px]"
+              >
+                HTML layout is based on one of the most common and reliable
+                framework - Bootstrap.
+              </p>
+            </div>
+            <!-- ------------------ DIV ------------------ -->
+            <div class="space-y-3 lg:space-y-6 lg:w-2/4">
+              <img
+                src="./public/images/fa-html5.png"
+                class="mx-auto lg:mx-0 h-[50px]"
+                alt="HTML"
+              />
+              <!-- ----------------- Title ----------------- -->
+              <h1 class="text-xl text-white font-medium leading-[26px]">
+                HTML5 & CSS3
+              </h1>
+              <!-- --------------- Paragraph --------------- -->
+              <p
+                class="text-base text-white font-normal md:w-2/3 lg:w-[90%] md:mx-auto lg:mx-0 leading-[26px]"
+              >
+                We used only time-tested technologies for the best results.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img src="./public/images/Macbook Pro.png" class="lg:hidden" alt="" />
+        <img
+          src="./public/images/Macbook.png"
+          class="hidden lg:flex h-[579.94px] w-[1006.31px]"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 17° Hero -->
+    <section class="p-8 py-14 lg:px-44 lg:py-14 lg:pl-52 bg-blueDark">
+      <!-- ---------------- NAVBAR ----------------- -->
+      <nav class="flex flex-wrap items-center justify-between">
+        <!-- ----------------- LOGO ------------------ -->
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-[#25DAC5] transition-slow"
+          >Startup 3</a
+        >
+        <!-- ------------- MENU BURGUER -------------- -->
+        <button
+          data-collapse-toggle="navbar-default-17"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ------------------ UL ------------------- -->
+        <ul
+          class="hidden md:flex md:gap-10 w-full md:w-auto space-y-2 md:space-y-0"
+          id="navbar-default-17"
+        >
+          <li class="border-b border-gray-400 md:border-none pt-2 md:pt-0">
+            <a
+              href=""
+              class="text-base text-white font-medium hover:text-[#24DAC5] transition-slow"
+              >Tour</a
+            >
+          </li>
+          <li class="border-b border-gray-400 md:border-none pt-2 md:pt-0">
+            <a
+              href=""
+              class="text-base text-white font-medium hover:text-[#24DAC5] transition-slow"
+              >Features</a
+            >
+          </li>
+          <li class="border-b border-gray-400 md:border-none pt-2 md:pt-0">
+            <a
+              href=""
+              class="text-base text-white font-medium hover:text-[#24DAC5] transition-slow"
+              >Pricing</a
+            >
+          </li>
+          <li class="border-b border-gray-400 md:border-none pt-2 md:pt-0">
+            <a
+              href=""
+              class="text-base text-white font-medium hover:text-[#24DAC5] transition-slow"
+              >Blog</a
+            >
+          </li>
+          <li class="border-b border-gray-400 md:border-none pt-2 md:pt-0">
+            <a
+              href=""
+              class="text-white font-medium hover:text-blue-600 transition-slow"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li class="border-b border-gray-400 md:border-none pt-2 md:pt-0">
+            <a
+              href=""
+              class="text-white font-medium hover:text-cyan-300 transition-slow"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- ----------------- HERO ------------------ -->
+      <div
+        class="text-center lg:text-start lg:flex lg:flex-wrap pt-16 md:pt-24"
+      >
+        <!-- -------------- CHILDREN 1 --------------- -->
+        <div class="space-y-5 pb-10 lg:pb-0 lg:w-4/5">
+          <!-- ----------------- title ----------------- -->
+          <h1
+            class="text-[42px] md:text-5xl lg:text-[42px] text-white font-bold lg:leading-[52px] lg:tracking-[-0.4px]"
+          >
+            Simple design & prototyping
+          </h1>
+          <!-- --------------- paragraph --------------- -->
+          <p
+            class="text-[22px] text-white text-opacity-70 md:w-4/5 lg:w-full md:mx-auto lg:mx-0 font-medium lg:leading-[32px]"
+          >
+            Startup Framework gives you complete freedom over your creative
+            process — you don’t have to think about any technical aspects.
+          </p>
+        </div>
+        <!-- -------------- CHILDREN 2 --------------- -->
+        <div class="space-y-4 lg:text-center lg:w-auto">
+          <!-- ---------------- button ----------------- -->
+          <button
+            class="text-xl text-white font-medium px-10 py-5 rounded-full w-full md:w-auto bg-[#25DAC5] hover:bg-red-600 shadow-transform transition-slow"
+          >
+            Get Started
+          </button>
+          <!-- ----------------- line ------------------ -->
+          <p class="text-base text-white text-opacity-70 font-normal">
+            It is absolutely free.
+          </p>
+        </div>
+        <iframe
+          class="mt-10 lg:mt-[86px] rounded-xl w-full h-[190px] md:h-[400px] lg:w-full lg:h-[546px]"
+          src="https://www.youtube.com/embed/9Xh1nt6ek-I"
+          title="YouTube video player"
+          frameborder="4"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+          ></iframe
+        >
+      </div>
+    </section>
+    <!-- Divider -->
+    <div class="divider"></div>
+    <!-- 18° Hero -->
+    <section
+      class="p-8 py-14 lg:pr-32 lg:py-14 lg:pb-32 lg:pl-52 bg-bgSweet2 bg-[#2F1893] bg-cover md:bg-top lg:bg-center"
+    >
+      <!-- ---------------- NAVBAR ----------------- -->
+      <nav class="flex flex-wrap items-center justify-between">
+        <!-- ----------------- LOGO ------------------ -->
+        <a
+          href=""
+          class="text-2xl text-white font-bold hover:text-blueBlack transition-slow"
+          >Startup 3</a
+        >
+        <!-- ------------- MENU BURGUER -------------- -->
+        <button
+          data-collapse-toggle="navbar-default-18"
+          type="button"
+          class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default-2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- ------------------ UL ------------------- -->
+        <ul
+          class="hidden md:flex w-full md:items-center md:gap-9 lg:gap-10 md:w-auto space-y-3 md:space-y-0 pt-2 md:pt-0"
+          id="navbar-default-18"
+        >
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-blueDark transition-slow"
+              >Get App</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-blueDark transition-slow"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-blueDark transition-slow"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-blueDark transition-slow"
+              >F.A.Q.</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="text-lg text-white font-medium hover:text-blueDark transition-slow"
+              >Sign In</a
+            >
+          </li>
+          <li>
+            <button
+              class="text-lg text-[#482BE7] font-medium px-5 py-1.5 rounded-full bg-white w-full md:w-auto hover:bg-red-600 hover:text-white shadow-transform transition-slow"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <!-- ----------------- HERO ------------------ -->
+      <div
+        class="pt-16 md:pt-24 text-center lg:text-start space-y-4 md:space-y-6"
+      >
+        <!-- --------------- title --------------- -->
+        <p
+          class="text-4xl md:text-5xl lg:text-[72px] lg:w-3/5 text-white font-bold lg:leading-[86px] lg:tracking-[-1px]"
+        >
+          Startup Framework. Suit Up Your Startup
+        </p>
+        <!-- --------------- paragraph --------------- -->
+        <p
+          class="text-[22px] md:w-2/3 lg:w-[56%] md:mx-auto lg:mx-0 text-white font-medium lg:leading-[32px]"
+        >
+          We have created a new product that will help designers, developers and
+          companies create websites for their startups quickly and easily.
+        </p>
+        <!-- ------------------ DIV ------------------ -->
+        <div class="space-y-4 md:space-x-4">
+          <button
+            class="text-xl text-[#482BE7] font-medium px-7 py-4 rounded-full bg-white w-full md:w-auto hover:bg-red-600 hover:text-white transition-slow"
+          >
+            Get Started
+          </button>
+          <button
+            class="text-xl text-white font-medium px-7 py-4 rounded-full border-2 border-white border-opacity-30 w-full md:w-auto hover:bg-white hover:text-[#482BE7] transition-slow"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="./node_modules/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
