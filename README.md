@@ -1,3 +1,3 @@
-# 🤓Navigations example
+# 🤓Heroes example
 ## [URL](https://jackson97parada.github.io/Heroes_examples/)
 
